@@ -33,6 +33,41 @@
         android:layout_below="@+id/simpleSpinner"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/simpleSpinner"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="218dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="57dp"
+        android:text="Breakfast" />
+
+    <Spinner
+        android:id="@+id/simpleSpinner1"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/simpleSpinner"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
         android:layout_marginTop="24dp"
         android:layout_toEndOf="@+id/textView3"
         android:layout_toRightOf="@+id/textView3" />
@@ -43,29 +78,29 @@
         android:layout_height="35dp"
         android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="22dp"
+        android:layout_marginLeft="19dp"
         android:layout_marginTop="35dp"
         android:text="Lunch" />
 
     <Spinner
         android:id="@+id/simpleSpinner2"
-        android:layout_width="72dp"
+        android:layout_width="61dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/simpleSpinner1"
-        android:layout_marginStart="29dp"
-        android:layout_marginLeft="29dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
         android:layout_marginTop="26dp"
         android:layout_toEndOf="@+id/textView4"
         android:layout_toRightOf="@+id/textView4" />
 
     <Spinner
         android:id="@+id/simpleSpinner3"
-        android:layout_width="69dp"
-        android:layout_height="33dp"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/simpleSpinner2"
-        android:layout_marginStart="33dp"
-        android:layout_marginLeft="33dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="31dp"
         android:layout_toEndOf="@+id/textView4"
         android:layout_toRightOf="@+id/textView4" />
 
@@ -75,7 +110,7 @@
         android:layout_height="39dp"
         android:layout_below="@+id/textView4"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="25dp"
+        android:layout_marginLeft="21dp"
         android:layout_marginTop="40dp"
         android:text="Exercise" />
 
@@ -85,7 +120,7 @@
         android:layout_height="35dp"
         android:layout_below="@+id/textView3"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="24dp"
+        android:layout_marginLeft="21dp"
         android:layout_marginTop="38dp"
         android:text="Dinner" />
 
@@ -97,7 +132,14 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="48dp"
         android:layout_marginTop="57dp"
-        android:text="Calories Remaining" />
+        android:text="Calories Remaining"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/grey_font"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"/>
 
     <TextView
         android:id="@+id/editText"
@@ -105,7 +147,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView5"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="274dp"
+        android:layout_marginLeft="279dp"
         android:layout_marginTop="42dp"
 
         />
@@ -117,9 +159,9 @@
         android:layout_below="@+id/editText"
         android:layout_alignStart="@+id/editText"
         android:layout_alignLeft="@+id/editText"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="0dp"
         android:text="Remaining " />
 
     <TextView
